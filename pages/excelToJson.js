@@ -7,9 +7,7 @@ var excelToJson = function () {
             output: "testData.json",
             sheet: "Sheet1"
 
-        }
-        )
-
+        })
     }
 }
 
