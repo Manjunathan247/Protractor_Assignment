@@ -156,7 +156,7 @@ var sample = function () {
         });
 
         Then('I enter the title of the book', async function () {
-            await createBookPage.titleOfBook("demoBook")
+            await createBookPage.titleOfBook("demoBook");
         });
 
         Then('I select the Author from drop down', async function () {
