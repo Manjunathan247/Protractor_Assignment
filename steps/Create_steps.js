@@ -21,7 +21,7 @@ var sample = function () {
 
         Given('The Pulp app main menu is open', async function () {
 
-            excelToJson.excelToJson();
+            //excelToJson.excelToJson();
 
             var title = await browser.getTitle();
             console.log("Title of the page is " + title);
