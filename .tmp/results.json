@@ -26,7 +26,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 76000000
+              "duration": 24000000
             }
           },
           {
@@ -39,7 +39,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 357000000
+              "duration": 218000000
             }
           },
           {
@@ -52,7 +52,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 334000000
+              "duration": 208000000
             }
           },
           {
@@ -62,8 +62,7 @@
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
@@ -86,7 +85,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 42000000
             }
           },
           {
@@ -99,7 +98,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 848000000
+              "duration": 739000000
             }
           },
           {
@@ -112,7 +111,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 112000000
+              "duration": 43000000
             }
           },
           {
@@ -125,7 +124,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 246000000
+              "duration": 319000000
             }
           },
           {
@@ -138,7 +137,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 806000000
+              "duration": 710000000
             }
           },
           {
@@ -151,7 +150,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 252000000
+              "duration": 70000000
             }
           },
           {
@@ -161,7 +160,8 @@
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed"
+              "status": "passed",
+              "duration": 1000000
             }
           }
         ]
@@ -184,7 +184,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 592000000
+              "duration": 538000000
             }
           },
           {
@@ -197,7 +197,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 848000000
+              "duration": 718000000
             }
           },
           {
@@ -210,7 +210,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 43000000
+              "duration": 11000000
             }
           },
           {
@@ -223,7 +223,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 330000000
+              "duration": 134000000
             }
           },
           {
@@ -236,7 +236,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 684000000
+              "duration": 638000000
             }
           },
           {
@@ -249,7 +249,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 98000000
+              "duration": 60000000
             }
           },
           {
@@ -282,7 +282,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 316000000
+              "duration": 398000000
             }
           },
           {
@@ -295,7 +295,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 891000000
+              "duration": 593000000
             }
           },
           {
@@ -308,7 +308,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 17000000
+              "duration": 25000000
             }
           },
           {
@@ -321,7 +321,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 228000000
+              "duration": 145000000
             }
           },
           {
@@ -334,7 +334,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 759000000
+              "duration": 606000000
             }
           },
           {
@@ -347,7 +347,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 73000000
+              "duration": 74000000
             }
           },
           {
@@ -380,7 +380,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 364000000
+              "duration": 321000000
             }
           },
           {
@@ -393,7 +393,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 921000000
+              "duration": 650000000
             }
           },
           {
@@ -406,7 +406,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 158000000
+              "duration": 46000000
             }
           },
           {
@@ -419,7 +419,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 149000000
+              "duration": 137000000
             }
           },
           {
@@ -471,7 +471,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 239000000
+              "duration": 140000000
             }
           },
           {
@@ -484,7 +484,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 104000000
+              "duration": 71000000
             }
           },
           {
@@ -497,7 +497,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 1348000000
+              "duration": 647000000
             }
           },
           {
@@ -510,7 +510,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 68000000
+              "duration": 66000000
             }
           },
           {
@@ -520,8 +520,7 @@
               "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           }
         ]
@@ -544,7 +543,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 938000000
+              "duration": 680000000
             }
           },
           {
@@ -557,7 +556,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 365000000
+              "duration": 214000000
             }
           },
           {
@@ -570,7 +569,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 808000000
+              "duration": 716000000
             }
           },
           {
@@ -583,7 +582,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 24000000
+              "duration": 37000000
             }
           },
           {
@@ -596,7 +595,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 716000000
+              "duration": 661000000
             }
           },
           {
@@ -609,7 +608,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 15000000
+              "duration": 7000000
             }
           },
           {
@@ -642,7 +641,7 @@
             },
             "result": {
               "status": "passed",
-              "duration": 470000000
+              "duration": 372000000
             }
           },
           {
@@ -654,8 +653,7 @@
               "location": "Code\\Assignment\\steps\\Create_steps.js:260"
             },
             "result": {
-              "status": "passed",
-              "duration": 1000000
+              "status": "passed"
             }
           },
           {

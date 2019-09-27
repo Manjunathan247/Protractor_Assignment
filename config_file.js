@@ -17,7 +17,9 @@ exports.config =
             package: 'protractor-multiple-cucumber-html-reporter-plugin', 
             options: {      
               automaticallyGenerateReport: true,  
-              removeExistingJsonReportFile: true    
+              removeExistingJsonReportFile: true,
+              reportPath: 'reports/',  
+              displayDuration: true, 
             }  
           }],
 
