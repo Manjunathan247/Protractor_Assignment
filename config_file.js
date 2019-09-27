@@ -13,6 +13,14 @@ exports.config =
             
         },
 
+        plugins: [{
+            package: 'protractor-multiple-cucumber-html-reporter-plugin', 
+            options: {      
+              automaticallyGenerateReport: true,  
+              removeExistingJsonReportFile: true    
+            }  
+          }],
+
         onPrepare : async function(){
             browser.ignoreSynchronization = true;
             //await browser.waitForAngularEnabled(false);
