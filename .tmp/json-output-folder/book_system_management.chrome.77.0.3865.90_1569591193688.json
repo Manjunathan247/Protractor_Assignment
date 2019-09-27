@@ -1,0 +1,686 @@
+[
+  {
+    "description": "    As a user of the Pulp App\n    I would like to create/upload series of books to a digital library\n    So that I can validate all the books created/uploaded are present in the library",
+    "keyword": "Feature",
+    "name": "Book System Management",
+    "line": 1,
+    "id": "book-system-management",
+    "tags": [],
+    "uri": "features\\bookSystemManagement.feature",
+    "elements": [
+      {
+        "id": "book-system-management;click-on-create-on-the-navigation-bar",
+        "keyword": "Scenario",
+        "line": 6,
+        "name": "Click on Create on the navigation bar",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 7,
+            "name": "The Pulp app main menu is open",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:22"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 42000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 8,
+            "name": "I mouse hover on Create link in navigation bar",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:31"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 249000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 9,
+            "name": "It should display Author,Series,Publisher and Book under Create link",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:36"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 233000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "book-system-management;click-on-author-link-under-create",
+        "keyword": "Scenario",
+        "line": 11,
+        "name": "Click on Author link under Create",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 12,
+            "name": "The Author link should display under Create",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:44"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 37000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 13,
+            "name": "I click on Author link",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:48"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 775000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 14,
+            "name": "It should navigate to Create Author page",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:52"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 16000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 15,
+            "name": "I enter name of the author",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:59"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 161000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 16,
+            "name": "I click on Create link to create Author",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:68"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 647000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 17,
+            "name": "the author should be added to the list",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:72"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 83000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          }
+        ]
+      },
+      {
+        "id": "book-system-management;click-on-series-link-under-create",
+        "keyword": "Scenario",
+        "line": 19,
+        "name": "Click on Series link under Create",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 20,
+            "name": "The Series link should display under Create",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:79"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 525000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 21,
+            "name": "I click on Series link",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:86"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 995000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 22,
+            "name": "It should navigate to Create Series page",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:90"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 14000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 23,
+            "name": "I enter name of the Series",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:97"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 173000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 24,
+            "name": "I click on Create link to create Series",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:101"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1764000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 25,
+            "name": "the Series should be added to the list",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:105"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 123000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "book-system-management;click-on-publisher-link-under-create",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Click on Publisher link under Create",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 28,
+            "name": "The Publisher link should display under Create",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:111"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 344000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 29,
+            "name": "I click on Publisher link",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:117"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 997000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 30,
+            "name": "It should navigate to Create Publisher page",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:121"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 31000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "I enter name of the Publisher",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:127"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 235000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "I click on Create link to create Publisher",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:131"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 644000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "the Publisher should be added to the list",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:135"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 72000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "book-system-management;click-on-book-link-under-create",
+        "keyword": "Scenario",
+        "line": 35,
+        "name": "Click on Book link under Create",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 36,
+            "name": "The Book link should display under Create",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:142"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 328000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 37,
+            "name": "I click on Book link",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:147"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 629000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 38,
+            "name": "It should navigate to Create Book page",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:152"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 24000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 39,
+            "name": "I enter the title of the book",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:159"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 154000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 40,
+            "name": "I select the Author from drop down",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:163"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 2000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 41,
+            "name": "I select the Publisher from drop down",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:168"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 42,
+            "name": "I select the Series from drop down",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:173"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 1000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 43,
+            "name": "I enter the Series Identifier",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:178"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 198000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 44,
+            "name": "I enter the Year of publication",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:184"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 99000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 45,
+            "name": "I click on Create link to create Book",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:189"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 611000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 46,
+            "name": "the Book should be added to the list",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:193"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 74000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "book-system-management;click-on-series-on-the-navigation-bar",
+        "keyword": "Scenario",
+        "line": 48,
+        "name": "Click on Series on the navigation bar",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 49,
+            "name": "I click on Series navigation link",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:200"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 835000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 50,
+            "name": "It should display with list of created series",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:207"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 229000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 51,
+            "name": "I click on created series link",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:222"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 653000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 52,
+            "name": "It should display selected series details page",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:227"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 28000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 53,
+            "name": "I click on List of Books in Series",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:233"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 656000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 54,
+            "name": "It should display the table of books in the series",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:238"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 12000000
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      },
+      {
+        "id": "book-system-management;fetching-details-of-books",
+        "keyword": "Scenario",
+        "line": 56,
+        "name": "Fetching details of Books",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 57,
+            "name": "I fetch the details of books",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:245"
+            },
+            "result": {
+              "status": "passed",
+              "duration": 299000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 58,
+            "name": "I should validate UI data with testdata",
+            "match": {
+              "location": "Code\\Assignment\\steps\\Create_steps.js:260"
+            },
+            "result": {
+              "status": "failed",
+              "duration": 62000000,
+              "error_message": "AssertionError\n    + expected - actual\n\n    -Alan Hathway\n    +Demo_Author_1\n\n    at World.<anonymous> (C:\\Manjunathan\\Automation Code\\Assignment\\steps\\Create_steps.js:265:38)\n    at <anonymous>\n    at process._tickCallback (internal/process/next_tick.js:188:7)"
+            }
+          },
+          {
+            "keyword": "After",
+            "hidden": true,
+            "match": {
+              "location": "node_modules\\protractor-cucumber-framework\\lib\\resultsCapturer.js:26"
+            },
+            "result": {
+              "status": "passed"
+            }
+          }
+        ]
+      }
+    ],
+    "metadata": {
+      "browser": {
+        "name": "chrome",
+        "version": "77.0.3865.90"
+      },
+      "device": "",
+      "platform": {
+        "name": "",
+        "version": ""
+      }
+    }
+  }
+]

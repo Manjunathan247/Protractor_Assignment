@@ -55,4 +55,4 @@ Feature: Book System Management
 
     Scenario: Fetching details of Books 
         When I fetch the details of books
-        Then I should validate
+        Then I should validate UI data with testdata
