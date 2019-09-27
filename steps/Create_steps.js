@@ -1,7 +1,7 @@
 
 var sample = function () {
    
-    //var excel=require('../utils/excelReader.js');
+    var excel=require('../pages/excelToJson.js');
     //var excelToJson = require('../pages/excelToJson.js');
     var pulpAppMainPage = require('../pages/pulpAppMainPage.js');
     var createAuthorPage = require('../pages/createAuthorPage.js');
@@ -57,13 +57,16 @@ var sample = function () {
         });
 
         Then('I enter name of the author', async function () {
-            await createAuthorPage.enterAuthorName(excel.Authorvalues());
-
+            console.log("Value of the Author field : "+excel.testConfig.author1);
+            await createAuthorPage.enterAuthorName(excel.testConfig.author1);
+            // for(var i=1;i<=4;i++)
+            // {
+                
+            // }
         });
 
         Then('I click on Create link to create Author', async function () {
             await createAuthorPage.createButton().click();
-
         });
 
         Then('the author should be added to the list', async function () {
@@ -92,19 +95,17 @@ var sample = function () {
         });
 
         Then('I enter name of the Series', async function () {
-            await createSeriesPage.nameOfSeries("demoSeries");
+            await createSeriesPage.nameOfSeries(excel.testConfig.series1);
         });
 
         Then('I click on Create link to create Series', async function () {
             await createSeriesPage.createButton().click();
-
         });
 
         Then('the Series should be added to the list', async function () {
             var seriesList = await createSeriesPage.addedSeriesList().getText();
             console.log("Name of the series added to the list is " + seriesList);
-            await expect(seriesList).to.equal("Added Series demoSeries");
-
+            await expect(seriesList).to.equal("Added Series Demo_Series_1");
         });
 
         Given('The Publisher link should display under Create', async function () {
@@ -124,7 +125,7 @@ var sample = function () {
         });
 
         Then('I enter name of the Publisher', async function () {
-            await createPublisherPage.enterPublisherName("demoPublisher");
+            await createPublisherPage.enterPublisherName(excel.testConfig.publisher1);
         });
 
         Then('I click on Create link to create Publisher', async function () {
@@ -134,7 +135,7 @@ var sample = function () {
         Then('the Publisher should be added to the list', async function () {
             var publisherList = await createPublisherPage.addedPublisherList().getText();
             console.log("Name of the Publisher added to the list is " + publisherList);
-            await expect(publisherList).to.equal("Added Publisher demoPublisher");
+            await expect(publisherList).to.equal("Added Publisher Demo_Publisher_1");
 
         });
 
@@ -156,32 +157,32 @@ var sample = function () {
         });
 
         Then('I enter the title of the book', async function () {
-            await createBookPage.titleOfBook("demoBook");
+            await createBookPage.titleOfBook(excel.testConfig.book1);
         });
 
         Then('I select the Author from drop down', async function () {
-            await createBookPage.authorOfBook(5);
+            await createBookPage.authorOfBook(excel.testConfig.authorOfBook);
 
         });
 
         Then('I select the Publisher from drop down', async function () {
-            await createBookPage.publisherOfBook("2");
+            await createBookPage.publisherOfBook(excel.testConfig.publisherOfBook);
 
         });
 
         Then('I select the Series from drop down', async function () {
-            await createBookPage.seriesOfBook("2");
+            await createBookPage.seriesOfBook(excel.testConfig.seriesOfBook);
 
         });
 
         Then('I enter the Series Identifier', async function () {
-            await createBookPage.seriesIdentifierOfBook("1992");
+            await createBookPage.seriesIdentifierOfBook(excel.testConfig.seriesIdentifierOfBook);
 
         });
 
 
         Then('I enter the Year of publication', async function () {
-            await createBookPage.yearofpublication("2012");
+            await createBookPage.yearofpublication(excel.testConfig.yearofpublication);
 
         });
 
@@ -192,7 +193,7 @@ var sample = function () {
         Then('the Book should be added to the list', async function () {
             var bookList = await createBookPage.addedBookList().getText();
             console.log(bookList);
-            await expect(bookList).to.equal("Added Book demoBook");
+            await expect(bookList).to.equal("Added Book Demo_Book_1");
 
         });
 
