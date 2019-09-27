@@ -4,7 +4,7 @@ exports.config =
 
         capabilities: {
             browserName: 'chrome',
-          },        
+        },
 
         framework: 'custom',
         frameworkPath: require.resolve('protractor-cucumber-framework'),
@@ -18,16 +18,16 @@ exports.config =
         },
 
         plugins: [{
-            package: 'protractor-multiple-cucumber-html-reporter-plugin', 
-            options: {      
-              automaticallyGenerateReport: true,  
-              removeExistingJsonReportFile: true,
-              reportPath: 'reports/',  
-              displayDuration: true, 
-            }  
-          }],
+            package: 'protractor-multiple-cucumber-html-reporter-plugin',
+            options: {
+                automaticallyGenerateReport: true,
+                removeExistingJsonReportFile: true,
+                reportPath: 'reports/',
+                displayDuration: true,
+            }
+        }],
 
-        onPrepare : async function(){
+        onPrepare: async function () {
             browser.ignoreSynchronization = true;
             //await browser.waitForAngularEnabled(false);
             browser.driver.manage().window().maximize();
