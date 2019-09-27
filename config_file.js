@@ -10,7 +10,7 @@ exports.config =
         ],
         cucumberOpts: {
             require: 'steps/*_steps.js',
-            
+            format: 'json:.tmp/results.json',
         },
 
         plugins: [{
