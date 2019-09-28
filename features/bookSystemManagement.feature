@@ -53,6 +53,6 @@ Feature: Book System Management
         And I click on List of Books in Series
         Then It should display the table of books in the series
 
-    Scenario: Fetching details of Books 
+    Scenario: Fetching details of Books
         When I fetch the details of books
         Then I should validate UI data with testdata
