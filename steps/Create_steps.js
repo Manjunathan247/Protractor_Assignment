@@ -10,18 +10,20 @@ var sample = function () {
     var listofSeriesPage = require('../pages/listOfSeriesPage.js');
     var tableOfBooksPage = require('../pages/tableOfBooks.js');
 
-    var screenShot = require('../helper/hooks.js');
+    var log4js = require('log4js');
+    var logger = log4js.getLogger();
+    logger.level = 'info';
     var { setDefaultTimeout } = require('cucumber');
     setDefaultTimeout(60 * 1000);
     var { defineSupportCode } = require('cucumber');
     var chai = require('chai').use(require('chai-as-promised'));
     var expect = chai.expect;
 
-    defineSupportCode(function ({ Given, When, Then, After }) {
+    defineSupportCode(function ({ Given, When, Then }) {
 
         Given('The Pulp app main menu is open', async function () {
             var title = await browser.getTitle();
-            console.log("Title of the page is " + title);
+            await logger.info("Title of the page is " + title);
             await expect(title).to.equal("Pulp App Main Menu");
         });
 
@@ -47,12 +49,12 @@ var sample = function () {
 
         Then('It should navigate to Create Author page', async function () {
             var titleAuthorPage = await browser.getTitle();
-            console.log("Title of the page is " + titleAuthorPage);
+            await logger.info("Title of the page is " + titleAuthorPage);
             await expect(titleAuthorPage).to.equal("Create Author");
         });
 
         Then('I enter name of the author', async function () {
-            console.log("Value of the Author field : " + excel.testConfig.author1);
+            await logger.info("Value of the Author field : " + excel.testConfig.author1);
             await createAuthorPage.enterAuthorName(excel.testConfig.author1);
         });
 
@@ -62,7 +64,7 @@ var sample = function () {
 
         Then('the author should be added to the list', async function () {
             var Authortext = await createAuthorPage.addedAuthorList().getText();
-            console.log("Name of the author added to the list is " + Authortext);
+            await logger.info("Name of the author added to the list is " + Authortext);
             await expect(Authortext).to.equal("Added Author Demo_Author_1");
         });
 
@@ -79,7 +81,7 @@ var sample = function () {
 
         Then('It should navigate to Create Series page', async function () {
             var titleSeriesPage = await browser.getTitle();
-            console.log("Title of the page is " + titleSeriesPage);
+            await logger.info("Title of the page is " + titleSeriesPage);
             await expect(titleSeriesPage).to.equal("Create Series");
         });
 
@@ -93,7 +95,7 @@ var sample = function () {
 
         Then('the Series should be added to the list', async function () {
             var seriesList = await createSeriesPage.addedSeriesList().getText();
-            console.log("Name of the series added to the list is " + seriesList);
+            await logger.info("Name of the series added to the list is " + seriesList);
             await expect(seriesList).to.equal("Added Series Demo_Series_1");
         });
 
@@ -108,7 +110,7 @@ var sample = function () {
 
         Then('It should navigate to Create Publisher page', async function () {
             var titlePublisherPage = await browser.getTitle();
-            console.log("Title of the page is " + titlePublisherPage);
+            await logger.info("Title of the page is " + titlePublisherPage);
             await expect(titlePublisherPage).to.equal("Create Publisher");
         });
 
@@ -122,7 +124,7 @@ var sample = function () {
 
         Then('the Publisher should be added to the list', async function () {
             var publisherList = await createPublisherPage.addedPublisherList().getText();
-            console.log("Name of the Publisher added to the list is : " + publisherList);
+            await logger.info("Name of the Publisher added to the list is : " + publisherList);
             await expect(publisherList).to.equal("Added Publisher Demo_Publisher_1");
         });
 
@@ -137,7 +139,7 @@ var sample = function () {
 
         Then('It should navigate to Create Book page', async function () {
             var titleBookPage = await browser.getTitle();
-            console.log("Title of the page is " + titleBookPage);
+            await logger.info("Title of the page is " + titleBookPage);
             await expect(titleBookPage).to.equal("Create Book");
         });
 
@@ -172,23 +174,23 @@ var sample = function () {
 
         Then('the Book should be added to the list', async function () {
             var bookList = await createBookPage.addedBookList().getText();
-            console.log(bookList);
+            await logger.info(bookList);
             await expect(bookList).to.equal("Added Book Demo_Book_1");
         });
 
         When('I click on Series navigation link', async function () {
             await pulpAppMainPage.seriesNavBar().click();
             var titleListOfSeriesPage = await browser.getTitle();
-            console.log("Title of the page is " + titleListOfSeriesPage);
+            await logger.info("Title of the page is " + titleListOfSeriesPage);
             await expect(titleListOfSeriesPage).to.equal("List of Series");
         });
 
         Then('It should display with list of created series', async function () {
             var seriesNameList = await listofSeriesPage.list;
-            console.log("There are " + seriesNameList.length + " series in the series list page");
+            await logger.info("There are " + seriesNameList.length + " series in the series list page");
             for (let j = 0; j < await seriesNameList.length; j++) {
                 var seriesName = await seriesNameList[j].getText();
-                console.log(seriesName);
+                await logger.info(seriesName);
             }
         });
 
@@ -198,7 +200,7 @@ var sample = function () {
 
         Then('It should display selected series details page', async function () {
             var titleSeriesDetailPage = await browser.getTitle();
-            console.log("Title of the page is " + titleSeriesDetailPage);
+            await logger.info("Title of the page is " + titleSeriesDetailPage);
             await expect(titleSeriesDetailPage).to.equal("View Series");
         });
 
@@ -208,21 +210,21 @@ var sample = function () {
 
         Then('It should display the table of books in the series', async function () {
             var tableOfBooksPage = await browser.getTitle();
-            console.log("Title of the page is " + tableOfBooksPage);
+            await logger.info("Title of the page is " + tableOfBooksPage);
             await expect(tableOfBooksPage).to.equal("Table of Books");
         });
 
         When('I fetch the details of books', async function () {
             //Number of columns
             var nameOfTableHeader = await tableOfBooksPage.tableHeader;
-            console.log("Number of columns in the table is " + nameOfTableHeader.length);
+            await logger.info("Number of columns in the table is " + nameOfTableHeader.length);
 
             //Number of Rowa
             var numberOfRows = await tableOfBooksPage.rowsOftable;
-            console.log("Number of rows in the table is " + numberOfRows.length);
+            await logger.info("Number of rows in the table is " + numberOfRows.length);
 
             var numberOfData = await tableOfBooksPage.numberOfData;
-            await console.log("table: " + numberOfData.length)
+            await logger.info("table: " + numberOfData.length);
             await tableOfBooksPage.rows(numberOfData);
         });
 
@@ -242,7 +244,7 @@ var sample = function () {
             var series = await tableOfBooksPage.series.getText()
             await expect(series).to.equal(excel.testConfig.series1);
 
-            await browser.sleep(10000);
+            await logger.info("END")
         });
     });
 }

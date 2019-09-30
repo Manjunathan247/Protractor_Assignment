@@ -1,3 +1,6 @@
+var log4js = require('log4js');
+var logger = log4js.getLogger();
+logger.level = 'info';
 exports.config =
     {
         seleniumAddress: 'http://localhost:4444/wd/hub',
@@ -27,6 +30,7 @@ exports.config =
             //await browser.waitForAngularEnabled(false);
             browser.driver.manage().window().maximize();
             await browser.get("https://thepulper.herokuapp.com/apps/pulp/");
+            logger.info("START");
 
         }
     }
