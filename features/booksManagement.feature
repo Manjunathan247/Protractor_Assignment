@@ -1,4 +1,4 @@
-Feature: Book System Management
+Feature: Books Management
     As a user of the Pulp App
     I would like to create/upload series of books to a digital library
     So that I can validate all the books created/uploaded are present in the library
