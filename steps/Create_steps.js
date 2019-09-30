@@ -10,6 +10,7 @@ var sample = function () {
     var listofSeriesPage = require('../pages/listOfSeriesPage.js');
     var tableOfBooksPage = require('../pages/tableOfBooks.js');
 
+    var screenShot = require('../helper/hooks.js');
     var { setDefaultTimeout } = require('cucumber');
     setDefaultTimeout(60 * 1000);
     var { defineSupportCode } = require('cucumber');

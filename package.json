@@ -3,6 +3,7 @@
   "version": "1.0.0",
   "description": "Assignment",
   "main": "index.js",
+  "git repository":"", 
   "scripts": {
     "prestart_webdriver": "webdriver-manager update",
     "start_webdriver": "webdriver-manager start",
