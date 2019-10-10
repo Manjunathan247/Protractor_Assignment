@@ -7,7 +7,8 @@
   "scripts": {
     "prestart_webdriver": "webdriver-manager update",
     "start_webdriver": "webdriver-manager start",
-    "protractor": "protractor config_file.js"
+    "protractor": "protractor config_file.js",
+    "start": "npm run prestart_webdriver && npm run start_webdriver && npm run protractor"
   },
   "author": "Manjunathan",
   "license": "ISC",
